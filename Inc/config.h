@@ -108,7 +108,14 @@
 #define TEMP_WARNING            600       // annoying fast beeps [°C * 10].  Here 60.0 °C
 #define TEMP_POWEROFF_ENABLE    0         // to poweroff or not to poweroff, 1 or 0, DO NOT ACTIVITE WITHOUT CALIBRATION!
 #define TEMP_POWEROFF           650       // overheat poweroff. (while not driving) [°C * 10]. Here 65.0 °C
+
+// ############################### STARTUP DELAY ################################
+#define STARTUP_DELAY_MS        500       // startup delay [ms] before power latch is activated. Prevents spurious power-on from brief supply glitches (e.g. UART back-powering).
 // ######################## END OF TEMPERATURE ###############################
+
+// ############################### ODOMETRY ######################################
+// #define ENABLE_ODOMETRY                   // [-] Enable hall sensor tick counters for wheel odometry (adds wheelR_cnt / wheelL_cnt to serial feedback)
+// ########################### END OF ODOMETRY ###################################
 
 
 
@@ -259,6 +266,11 @@
 // ############################### DEBUG LCD ###############################
 // #define DEBUG_I2C_LCD                // standard 16x2 or larger text-lcd via i2c-converter on right sensor board cable
 // ########################### END OF DEBUG LCD ############################
+
+
+// ############################### BUZZER ENABLE / DISABLE ###############################
+#define BUZZER_ENABLED              // If enabled the buzzer will buzz, otherwise not.
+// ########################### END OF BUZZER ENABLE / DISABLE ############################
 
 
 
